@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+  margin: 15px 8px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#user-single p {
+  margin: 8px 10px;
+}
+
+#user-single a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main Page - user info popup */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.507);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.507);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  top: -40px;   /* how do I make it relative to the p element */
+  left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.507) transparent transparent;
+}
+
+/* POST */
+
+#individual-post {
+  /* position: relative; */
+  border: solid 4px; 
+  border-color:#7093b4; 
+  padding: 7px; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.068);
+}
+
+/* #updateBtn {
+  display:block;
+  position: absolute;
+  top: 5px;
+  right: 90px;
+}
+
+#deleteBtn {
+  display:block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+} */
+
+#individual-comment {
+  border: solid 1px; 
+  padding: 7px; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.068);
+}
+
+textarea {
+  margin-left: 18px;
+  padding: 0px 200px;
+}
+
+
+
+/* ALL BUTTONS */
+button {
+  padding: 3px 15px;
+  border: solid 1px;
+}
+
+button:hover {
+  padding: 3px 15px;
+  background-color: #7093b4;
+  color: white;
+}
